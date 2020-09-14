@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "MY APP",
+          "PORTFOLIO",
           style: TextStyle(
             fontSize: 20.0,
             fontWeight: FontWeight.w400,
@@ -21,23 +21,18 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
       ),
       body: Center(
-        child : Text(
-          "This is the homescreen",
-          style: TextStyle(
-            fontSize: 30.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[800],
-            fontFamily: 'IndieFlower',
-          ),
+          child: RaisedButton.icon(
+            onPressed: (){
+              print("hey there");
+            },
+            icon: Icon(
+              Icons.mail
+            ),
+            label: Text("Mail me"),
+            color: Colors.amberAccent,
+          )
         ),
-      ),
-    floatingActionButton: FloatingActionButton(
-      onPressed: (){},
-      backgroundColor: Colors.red[600],
-      child: Text("Click"),
-      ),
-    );
+      );
   } //build
 } //Home
 
